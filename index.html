@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BE2YBVVN5B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-BE2YBVVN5B');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soumya Ranjan</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+    <link rel="shortcut icon" href="Asset/Pic/favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="minimal-style.css" />
+  <link rel="stylesheet" href="skills.css">
+</head>
+
+<body>
+  <div id="scroll-line"></div>
+  <div class="circle"></div>
+  <div class="loader">
+    <h1 class="gradient-txt">...Hello...</h1>
+  </div>
+
+  <header>
+    <div>
+      <button onclick="toggleSidebar()">
+        <i class="ri-menu-4-fill"></i>
+      </button>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="#Hero">Home</a>
+        </li>
+        <li>
+          <a href="#About">About</a>
+        </li>
+        <li>
+          <a href="#Projects">Project</a>
+        </li>
+        <li class="hidden">
+          <a href="#Skills">Skills</a>
+        </li>
+        <li>
+          <a href="#Contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="theme-btn-container">
+      <!-- <i class="ri-moon-fill" id="dark-icon"></i> -->
+      <!-- <i class="ri-sun-fill" id="light-icon"></i> -->
+      <button onclick="toggleTheme()">
+        <i class="ri-moon-fill" id="theme-icon"></i>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- sidebar -->
+  <div class="sidebar moved-left">
+    <div class="upper">
+      <button onclick="toggleSidebar()">
+        <i class="ri-menu-unfold-4-line"></i>
+      </button>
+    </div>
+
+    <div class="middle">
+      <ul id="navigation-links" class="hidden">
+        <li>
+          <a href="#Hero"><i style="color: rgb(17, 42, 180)" class="ri-home-2-fill"></i>
+            Home</a>
+        </li>
+        <li>
+          <a href="#About"><i style="color: rgb(192, 223, 17)" class="ri-user-smile-fill"></i>
+            About</a>
+        </li>
+        <li>
+          <a href="#Projects"><i style="color: gray" class="ri-pencil-ruler-2-fill"></i>
+            Project</a>
+        </li>
+        <li class="hidden">
+          <a href="#Skills"><i style="color: rgb(214, 12, 12)" class="ri-file-pdf-2-fill"></i>
+            Skills</a>
+        </li>
+        <li>
+          <a href="#Contact"><i style="color: rgb(49, 212, 16)" class="ri-whatsapp-fill"></i>
+            Contact</a>
+        </li>
+      </ul>
+
+      <h2>Clone Projects</h2>
+      <ul>
+        <li>
+          <a target="_blank" href="https://netfilxindia.netlify.app/"><i style="color: rgb(153, 1, 1)"
+              class="ri-netflix-fill"></i>
+            Netflix
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://youtbue.netlify.app/"><i style="color: rgb(177, 13, 13)"
+              class="ri-youtube-fill"></i>
+            YouTube
+          </a>
+        </li>
+        <li class="hidden">
+          <a target="_blank" href="https://netfilxindia.netlify.app/"><i style="color: rgb(0, 211, 0)"
+              class="ri-spotify-fill"></i>
+            Spotify
+          </a>
+        </li>
+      </ul>
+      <h2>Works</h2>
+      <ul>
+        <li>
+          <a target="_blank" href="https://github.com/Soumyaranjan-17/BillBuddy/"><i style="color: rgb(222, 236, 17)"
+              class="ri-money-rupee-circle-fill"></i>
+            BillBuddy
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://synergian2023-27.netlify.app/"><i style="color: rgb(134, 11, 11)"
+              class="ri-bookmark-3-fill"></i>
+            Note Management App
+          </a>
+        </li>
+      </ul>
+      <h2>Updating in future</h2>
+      <ul>
+        <li><i style="color: gray" class="ri-home-2-fill"></i> Home</li>
+        <li><i style="color: gray" class="ri-user-smile-fill"></i> About</li>
+        <li>
+          <i style="color: gray" class="ri-pencil-ruler-2-fill"></i> Project
+        </li>
+        <li><i style="color: gray" class="ri-file-pdf-2-fill"></i> Skills</li>
+        <li><i style="color: gray" class="ri-whatsapp-fill"></i> Contact</li>
+      </ul>
+    </div>
+
+    <div class="lower">
+      <button onclick="toggleAnimation()"><i class="ri-settings-3-line"></i></button>
+      <button><i class="ri-code-s-slash-line"></i></button>
+      <button><i class="ri-terminal-fill"></i></button>
+    </div>
+  </div>
+  <!-- sidebar -->
+  <main>
+    <section id="Hero" class="">
+      <div class="content">
+        <div class="hero-txt-box">
+          <h2 class="gradient-txt">...Hello...</h2>
+          <h1>
+            I'm <span class="code" data-value="Soumya">Soumya</span> <span class="code"
+              data-value="Ranjan">Ranjan</span> Sahoo
+            <i class="ri-code-s-slash-fill gradient-txt"></i>
+          </h1>
+          <p style="font-family: 'Courier New', Courier, monospace;">
+            Frontend <span class="hover2">Developer</span> & <span class="hover2">Cybersecurity </span>Enthusiast.
+          </p>
+          <br>
+          <p>I create responsive, secure, and user-friendly web applications. Passionate about ethical hacking and
+            solving real-world problems with code.
+          </p>
+
+          <div class="social-link-box">
+            <ul>
+              <li>
+                <a target="_blank" href="https://www.linkedin.com/in/soumyaranjan017/"><i
+                    class="ri-linkedin-box-fill"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://github.com/Soumyaranjan-17"><i class="ri-github-fill"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://instagram.com/the_gentelman_0/"><i class="ri-instagram-fill"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="mailto:soumyathedev0@gmail.com"><i class="ri-mail-fill"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://wa.me/+919337054909"><i class="ri-whatsapp-fill"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- DECOR -->
+        <div class="decor-container" style="display: none;">
+          <div class="decor-box" style="--data-color: #df1536"></div>
+          <div class="decor-box" style="--data-color: #00ff2a"></div>
+          <div class="decor-box" style="--data-color: transparent"></div>
+          <div class="decor-box" style="--data-color: transparent"></div>
+          <div class="decor-box" style="--data-color: yellow"></div>
+          <div class="decor-box" style="--data-color: pink"></div>
+        </div>
+
+
+        <div class="turn-left">
+          <i class="ri-arrow-left-circle-fill"></i>SCROLL DOWN
+        </div>
+    </section>
+    <section id="About" class="">
+      <p>A <span class="l-1">B.Tech</span> Computer Science student with a passion for crafting <span
+          class="l-2">web</span> experiences and <span class="l-3">securing</span> digital landscapes. From building
+        sleek, responsive <span class="l-4">websites</span> to diving deep into the world of <span
+          class="l-5">ethical</span> hacking, I love turning ideas into <span class="l-6">real-world</span> projects.
+      </p>
+      <br>
+      <p> I’m constantly pushing my boundaries in web development and cybersecurity. My goal <span class="l-7">?</span>
+        To create <span class="l-8">secure</span> , <span class="l-9">innovative</span> solutions that make a
+        difference. Explore my projects and let’s connect through <span class="l-10">GitHub</span> or <span
+          class="l-11">LinkedIn</span>!</p>
+    </section>
+    <section id="Projects" class="">
+      <div class="gradient-box-holder">
+        <h2 class="gradient-box">Projects</h2>
+      </div>
+
+      <div class="card-container">
+        <div class="card-landscape" style="background-image: url(Asset/Project-Screenshot/Netflix-1.png);"></div>
+        <div class="card-landscape" style="background-image: url(Asset/Project-Screenshot/Youtube-1.png);"></div>
+        <div class="card-landscape" style="background-image: url(Asset/Project-Screenshot/Note-1.png);"></div>
+        <div class="card-landscape" style="background-image: url(Asset/Project-Screenshot/Bill-Buddy-1.png);"></div>
+      </div>
+    </section>
+    <section id="Skills" class="hidden">
+      <div class="gradient-box-holder">
+        <h2 class="gradient-box">Skills</h2>
+      </div>
+      <div class="main-container">
+        <div class="grid-type-1">
+          <div class="box box1 clay">
+            <div class="skill-icon"></div>
+            <div class="skill-icon"></div>
+            <div class="skill-icon"></div>
+          </div>
+          <div class="box box2 clay ">
+            <div class="skill-icon"></div>
+            <div class="skill-icon"></div>
+          </div>
+          <div class="box box3 clay flex-vertical">
+            <div class="skill-icon"></div>
+            <div class="skill-icon"></div>
+            <div class="skill-icon"></div>
+          </div>
+          <div class="box box4 clay flex-vertical">
+            <div class="skill-icon"></div>
+            <div class="skill-icon"></div>
+            <div class="skill-icon"></div>
+          </div>
+          <div class="box box5 clay">
+            <div class="skill-icon"></div>
+            <div class="skill-icon"></div>
+            <div class="skill-icon"></div>
+          </div>
+          <div class="box box6 clay">
+            <div class="skill-icon"></div>
+            <div class="skill-icon"></div>
+            <div class="skill-icon"></div>
+          </div>
+          <div class="box box7 clay">
+            <div class="skill-icon"></div>
+            <div class="skill-icon"></div>
+            <div class="skill-icon"></div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section id="Contact" class="">
+      <!-- <div class="gradient-box-holder">
+        <h2 class="gradient-box">Let’s Connect</h2>
+      </div> -->
+      <div class="big-box">
+        <div class="form-container">
+          <div class="left">
+          </div>
+          <form action="https://api.web3forms.com/submit" method="POST" class="right">
+            <input type="hidden" name="access_key" value="1325a4ee-26ed-4e36-80f0-22f6193318ad">
+            <!-- I have not learned how to protect the API keys, that is why this is available here -->
+            <label for="name">Name </label>
+            <input type="text" name="name" id="name" placeholder="John Doe" required>
+            <label for="email">Email address </label>
+            <input type="email" name="email" id="email" placeholder="johndoe@mail.com" required>
+            <label for="message">Your Words 😊</label>
+            <textarea name="message" id="message" rows="10" required>Hello👋</textarea>
+
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+
+            <button type="submit">Send 🚀</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
